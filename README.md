@@ -19,7 +19,7 @@ A node.js base website that clients can use to carry out basic matrix operations
 
 - Ensure that the dependencies are install:
   - A C++ compiler that is C++11 compatible.
-  - Node.js (with modules: ExpressJS, body_parser, child_process)
+  - Node.js (with modules: express, body-parser)
 - Create a matrix-calculator directory.
 - Download the project from GitHub into this file.
 - Install the Node.js modules using the basic package.json file that has been provided. On the command line in the matrix-calculator directory run: npm install
