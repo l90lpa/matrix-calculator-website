@@ -1,0 +1,103 @@
+body{
+	margin:0px;
+}
+
+div.banner_container{
+	margin:15px 0px 0px;
+	padding:0px;
+	width:100%;
+	position:relative;
+}
+
+div.sky_logo_container{
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	width:231px;
+	height:130px;
+}
+
+div.sky_logo_container img{
+	width:231px;
+	height:130px;
+	boader:none;
+	padding:0px;
+	margin:0px;
+}
+
+div.header_container{
+	margin:0px;
+	padding:0px;
+	display:block;
+	position:absolute;
+	top:0px;
+	width:100%;
+	text-align:center;
+}
+
+div.cinema_logo_container{
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	width:198px;
+	height:36px;
+}
+
+div.cinema_logo_container img{
+	width:198px;
+	height:36px;
+	boader:none;
+	padding:0px;
+	margin:0px;
+}
+
+div.header_container header{
+	margin:0px;
+	padding:0px;
+	font-family:avenir;
+	font-size:50px;
+	letter-spacing:25px;
+}
+
+div.banner_container nav{
+	font-size:22px;
+	font-family:arial;
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+}
+
+div.banner_container nav p{
+	margin:0px;
+	padding:0px;
+}
+
+div.banner_container a{
+	padding:0px;
+	margin:0px 30px 0px;
+}
+
+div.banner_container a:link, div.banner_container a:visited{
+	color:black;
+	text-decoration:none;
+}
+
+div.banner_container a:hover, div.banner_container a:active{
+	color:#990000;
+	text-decoration:underline;
+}
+
+
+li.right-upper-element a{
+	font-family:arial;
+	font-size:24px;
+	text-decoration:none;
+}
+
+li.right-upper-element a:link, li.right-upper-element a:visited{
+	color:#ffffff;
+}
+
+li.right-upper-element a:hover, li.right-upper-element a:active{
+	color:#ccddff;
+}

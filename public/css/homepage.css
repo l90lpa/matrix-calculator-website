@@ -1,0 +1,57 @@
+div.sliders_container{
+	margin:70px 15px 40px;
+	padding:0px;
+	width:100%;
+	text-align:center;
+}
+
+ul.slider_list{
+	list-style-type:none;
+}
+
+ul.slider_list li{
+	height:50px;
+	margin-left:-40px;
+}
+
+ul.slider_list span{
+	font-size:25px;
+	font-family:arial;
+	width:300px;
+	display:inline-block;
+}
+
+ul.slider_list input{
+	display:inline;
+}
+
+div.recommendations_container{
+	text-align:center;
+	margin:0px;
+	padding:0px;width:100%;
+}
+
+div.recommended_movie{
+	display:inline-block;
+	margin:7px;
+	padding:0px;
+	width:18%;
+}
+
+div.cover_container{
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+}
+
+div.cover_container img{
+	boader:none;
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+
+div.recommended_movie p{
+	font-size:20px;
+	font-family:avenir;
+}
