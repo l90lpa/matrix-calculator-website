@@ -1,57 +1,47 @@
-div.sliders_container{
-	margin:70px 15px 40px;
-	padding:0px;
-	width:100%;
-	text-align:center;
-}
-
-ul.slider_list{
-	list-style-type:none;
-}
-
-ul.slider_list li{
-	height:50px;
-	margin-left:-40px;
-}
-
-ul.slider_list span{
-	font-size:25px;
+div.matrix_dimensions{
 	font-family:arial;
-	width:300px;
+	text-align:middle;
+}
+
+div.matrix_dimensions input{
+	position:relative;
+	top:6px;
+}
+
+div.matrix_dimensions span{
 	display:inline-block;
+	width:30px;
 }
 
-ul.slider_list input{
-	display:inline;
-}
-
-div.recommendations_container{
+div.matrix{
 	text-align:center;
-	margin:0px;
-	padding:0px;width:100%;
+	margin-top:15px;
 }
 
-div.recommended_movie{
-	display:inline-block;
-	margin:7px;
-	padding:0px;
-	width:18%;
-}
-
-div.cover_container{
-	margin:0px;
-	padding:0px;
+#matrix_one{
 	display:inline-block;
 }
 
-div.cover_container img{
-	boader:none;
-	padding:0px;
-	margin:0px;
-	width:100%;
+#matrix_two{
+	display:inline-block;
 }
 
-div.recommended_movie p{
-	font-size:20px;
-	font-family:avenir;
+div.operatorSelector{
+	font-family:arial;
+	text-align:center;
+	
+}
+
+#evaluate{
+	font-family:arial;
+	position:relative;
+	bottom:3px;
+}
+
+#matrix_three{
+	text-align:center;
+}
+
+#matrix_three table{
+	display:inline-block;
 }
