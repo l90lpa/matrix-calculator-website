@@ -6,51 +6,52 @@
 		<link rel="stylesheet" type="text/css" href="/css/homepage.css">
 	</head>
 	<body>
-	
 	  <header>
-		  <img src="/image/logo.png" alt="logo">
-		<div class="header_container">
-		  <h1>Matrix Calculator</h1>
-		  <p></p>
-		  <nav><a class="uploadLink" href="/">Home</a></nav>
-		</div>
+	    <img src="/image/logo.png" alt="logo">
+	    <div class="header_container">
+	      <h1>Matrix Calculator</h1>
+	      <p></p>
+	      <nav><a class="uploadLink" href="/">Home</a></nav>
+	    </div>
 	  </header>	
-	  
-	  
-		<div class="matrix">
-		  <div class="matrix_dimensions" id="matrix_one_dims">
-		    Rows: 2<input type="range" name="rows" min="2" max="6" step="1" value="4">6<span></span>
-		    Columns: 2<input type="range" name="cols" min="2" max="6" step="1" value="4">6
-		  </div>
-		  <table id="matrix_one">
-		    <tr>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		    </tr>
-            <tr>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		    </tr>
-			<tr>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		    </tr>
-		    <tr>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		      <td><input type="number"></input></td>
-		    </tr>
-		  </table>
-		</div>
-		
-		<div class="matrix">
+	  <div class="intro">
+	    <h2 id="intro">This is a very basic matrix calculator. Simply resizes the input matrices using
+	    the slider bars, populate the matrices, select the desired operation, and click
+	    evaluate. The resulting matrix will then be displayed at the bottom. Easy right!</h2>
+	  </div>
+	  <div class="matrix">
+	    <div class="matrix_dimensions" id="matrix_one_dims">
+	      Rows: 2<input type="range" name="rows" min="2" max="6" step="1" value="4">6<span></span>
+	      Columns: 2<input type="range" name="cols" min="2" max="6" step="1" value="4">6
+	    </div>
+	      <table id="matrix_one">
+	        <tr>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		</tr>
+                <tr>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		</tr>
+		<tr>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		</tr>
+		<tr>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		  <td><input type="number"></input></td>
+		</tr>
+	      </table>
+	    </div>
+	    <div class="matrix">
 		  <div class="matrix_dimensions" id="matrix_two_dims">
 		    Rows: 2<input type="range" name="rows" min="2" max="6" step="1" value="4">6<span></span>
 		    Columns: 2<input type="range" name="cols" min="2" max="6" step="1" value="4">6
@@ -82,7 +83,6 @@
 		    </tr>
 		  </table>
 		</div>
-		
 		<div class="operatorSelector">
 		  <p></p>
 		  <input type="radio" name="operator_1" value="+">A + B
@@ -90,9 +90,6 @@
 		  <input type="radio" name="operator_3" value="*">A * B
 		  <input id="evaluate" type="button" value="evaluate">
 		</div>
-		
-		
-		
 		<div class="matrix" id="matrix_three">
 		  <p></p>
 		  <table></table>

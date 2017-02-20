@@ -50,19 +50,19 @@ div.header_container nav{
 	margin:40px 0px 40px;
 }
 
-div.header_container a{
+div.header_container nav a{
 	padding:0px;
 	position:relative;
 	top:7px;
 	margin:0px 30px 0px;
 }
 
-div.header_container a:link, div.banner_container a:visited{
+div.header_container nav a:link, div.header_container nav a:visited{
 	color:black;
 	text-decoration:none;
 }
 
-div.header_container a:hover, div.banner_container a:active{
-	color:#990000;
+div.header_container nav a:hover, div.header_container nav a:active{
+	color:teal;
 	text-decoration:underline;
 }
