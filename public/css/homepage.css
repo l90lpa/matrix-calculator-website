@@ -1,3 +1,16 @@
+div.intro{
+	text-align:center;
+}
+
+#intro{
+	font-family:arial;
+	font-size:15px;
+	display:inline-block;
+	width:65%;
+	text-align:justify;
+	font-weight:normal;
+}
+
 div.matrix_dimensions{
 	font-family:arial;
 	text-align:middle;
@@ -44,4 +57,7 @@ div.operatorSelector{
 
 #matrix_three table{
 	display:inline-block;
+	border-left:solid black thin;
+	border-right:solid black thin;
+	border-radius:12px;
 }
