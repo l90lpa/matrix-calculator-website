@@ -3,7 +3,6 @@ A node.js base website that clients can use to carry out basic matrix operations
 
 ## 0. Proposed works
 
-- Add CSS file to style the homepage
 - Add functionality to cpp/matrixCalculator/main.cpp to deal carrying out matrix multiplication
 
 ## 1. Folder structure
