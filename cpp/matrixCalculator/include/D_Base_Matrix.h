@@ -23,6 +23,7 @@
  *                          Overloaded operator=.
  *                          "        " operator+.
  *                          "        " operator-.
+ *                          "        " operator*.
  *                          "        " operator(). Access matrix elements as a 2D matrix.
  *                          "        " operator<<. Output the matrix graphically as a 2D matrix.
  *                          transpose function.
@@ -46,6 +47,8 @@ D_Base_Matrix<T> operator+ (const D_Base_Matrix<T> &a, const D_Base_Matrix<T> &b
 template<typename T>
 D_Base_Matrix<T> operator- (const D_Base_Matrix<T> &a, const D_Base_Matrix<T> &b);
 
+template<typename T>
+D_Base_Matrix<T> operator* (const D_Base_Matrix<T> &a, const D_Base_Matrix<T> &b);
 
 template<typename T>
 class D_Base_Matrix
@@ -99,6 +102,8 @@ public:
     friend D_Base_Matrix operator+ <T> (const D_Base_Matrix &a, const D_Base_Matrix &b);
     
     friend D_Base_Matrix operator- <T> (const D_Base_Matrix &a, const D_Base_Matrix &b);
+    
+    friend D_Base_Matrix operator* <T> (const D_Base_Matrix &a, const D_Base_Matrix &b);
 };
 
 
@@ -233,6 +238,22 @@ D_Base_Matrix<T> operator-
     return temp;
 }
 
-
+template<typename T>
+D_Base_Matrix<T> operator*
+(const D_Base_Matrix<T> &a, const D_Base_Matrix<T> &b)
+{
+    D_Base_Matrix<T>temp{a.m_rows, b.m_cols};
+    for(int aRow = 0; aRow < a.m_rows; ++aRow)
+    {
+        for(int bCol = 0; bCol < b.m_cols; ++bCol)
+        {
+            for(int k = 0; k < a.m_cols; ++k)
+            {
+                temp.m_matrix[aRow * b.m_cols + bCol] += a.m_matrix[aRow * a.m_cols + k] * b.m_matrix[bCol + k * b.m_cols];
+            }
+        }
+    }
+    return temp;
+}
 
 #endif /* D_Base_Matrix_h */
