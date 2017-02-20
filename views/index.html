@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>homepage</title>
+		<link rel="stylesheet" type="text/css" href="/css/banner.css">
+		<link rel="stylesheet" type="text/css" href="/css/homepage.css">
+	</head>
+	<body>
+	
+	  <header>
+		  <img src="/image/logo.png" alt="logo">
+		<div class="header_container">
+		  <h1>Matrix Calculator</h1>
+		  <p></p>
+		  <nav><a class="uploadLink" href="/">Home</a></nav>
+		</div>
+	  </header>	
+	  
+	  
+		<div class="matrix">
+		  <div class="matrix_dimensions" id="matrix_one_dims">
+		    Rows: 2<input type="range" name="rows" min="2" max="6" step="1" value="4">6<span></span>
+		    Columns: 2<input type="range" name="cols" min="2" max="6" step="1" value="4">6
+		  </div>
+		  <table id="matrix_one">
+		    <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+            <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+			<tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+		    <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+		  </table>
+		</div>
+		
+		<div class="matrix">
+		  <div class="matrix_dimensions" id="matrix_two_dims">
+		    Rows: 2<input type="range" name="rows" min="2" max="6" step="1" value="4">6<span></span>
+		    Columns: 2<input type="range" name="cols" min="2" max="6" step="1" value="4">6
+		  </div>
+		  <table id="matrix_two">
+		    <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+		    <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+		    <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+		    <tr>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		      <td><input type="number"></input></td>
+		    </tr>
+		  </table>
+		</div>
+		
+		<div class="operatorSelector">
+		  <p></p>
+		  <input type="radio" name="operator_1" value="+">A + B
+		  <input type="radio" name="operator_2" value="-">A - B
+		  <input type="radio" name="operator_3" value="*">A * B
+		  <input id="evaluate" type="button" value="evaluate">
+		</div>
+		
+		
+		
+		<div class="matrix" id="matrix_three">
+		  <p></p>
+		  <table></table>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+		<script src="/js/homepage.js" charset="utf-8"></script>
+	</body>
+</html>
