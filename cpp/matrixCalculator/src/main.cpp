@@ -48,12 +48,13 @@ int main(int argc, const char * argv[])
     std::vector<int> matrixA;
     matrixA.resize(matrixSizeA);
 
-    int matrixAFinishIndex = matrixSizeA + 4;
+    int matrixAStartIndex = 4;
+    int matrixAFinishIndex = matrixSizeA + 3;
     // Convert string char to numeric values to be the row elements.
-    for(int i = 4; i < matrixAFinishIndex; ++i)
+    for(int i = matrixAStartIndex; i <= matrixAFinishIndex; ++i)
     {
         std::stringstream sA((argv[i]));
-        sA >> matrixA[i - 4];
+        sA >> matrixA[i - matrixAStartIndex];
     }
     
     //0 = program
@@ -97,7 +98,7 @@ int main(int argc, const char * argv[])
     D_Base_Matrix<int> B{rowsB,colsB};
     B = matrixB;
     
-    D_Base_Matrix<int> C{rowsB,colsB};
+    D_Base_Matrix<int> C{rowsA,colsB};
     
     const char op = *(argv[1]);
     switch(op) 
@@ -108,9 +109,9 @@ int main(int argc, const char * argv[])
     	case '-':
     		C = A - B;
     		break;
-    	//case '*':
-    	//	C = A * B;
-    	//	break;
+    	case '*':
+    		C = A * B;
+    		break;
     }
     
     std::cout << op << ",";
