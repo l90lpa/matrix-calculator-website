@@ -15,7 +15,7 @@ OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 # 
 # The "-I" flag adds a search path for the compiler to search for files from.
 # "$(CURDIR)" is a predefined variable that evaluates to the file path of the makefile.
-CXX = clang++
+CXX = g++
 CXXFLAGS = -I$(CURDIR) -Wall -std=c++11
 
 
