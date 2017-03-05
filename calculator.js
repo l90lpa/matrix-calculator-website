@@ -46,7 +46,7 @@ router.post('/', function(req, res) {
   var execFile = require('child_process').execFile;
     
   // The C++ program to be run.
-  var program = "/Users/nick/Documents/CompSci/WebDevelopment/matrixCalculator/cpp/matrixCalculator/matrixCalculator";
+  var program = "./cpp/matrixCalculator/matrixCalculator";
 
   // Run the C++ executable in the child process. Note: the first argument is the command 
   // used to run the program, the second argument is the arguments to be supplied to the
