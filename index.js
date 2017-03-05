@@ -13,7 +13,13 @@ app.get('/', function (request, response) {    //Display homepage.
 
 app.use('/calculator', require('./calculator'));
 
-
-app.listen(8080, function () {
+app.listen(process.env.PORT || 8080, function () {
+	if(process.env.PORT) {
+		console.log(process.env.PORT);
+	}
 	console.log('Running on 8080');
 });
+
+//app.listen(8080, function () {
+//	console.log('Running on 8080');
+//});
